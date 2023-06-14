@@ -8,9 +8,10 @@ from typing import List, Tuple
 
 
 def twist_wrist(row: str, k: int) -> int:
+    qty_buttons = 2*k
     points: int = 0
     for value in Counter(row).values():
-        if value <= 2*k:
+        if value <= qty_buttons:
             points += 1
     return points
 
@@ -24,5 +25,6 @@ def read_input(size_field: int = 4) -> Tuple[List[str], int]:
     return row, k
 
 
-row, k = read_input()
-print(twist_wrist(row, k))
+if __name__ == '__main__':
+    row, k = read_input()
+    print(twist_wrist(row, k))
