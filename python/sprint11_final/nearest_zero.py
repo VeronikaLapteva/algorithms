@@ -31,5 +31,6 @@ def read_input() -> List[int]:
     return house
 
 
-house = read_input()
-print(" ".join(map(str, neighbours_zero(house))))
+if __name__ == '__main__':
+    house = read_input()
+    print(" ".join(map(str, neighbours_zero(house))))
