@@ -8,7 +8,7 @@ from typing import List, Tuple
 
 
 def twist_wrist(row: str, k: int) -> int:
-    qty_buttons = 2*k
+    qty_buttons: int = 2*k
     points: int = 0
     for value in Counter(row).values():
         if value <= qty_buttons:
