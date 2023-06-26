@@ -1,3 +1,9 @@
+'''Калькулятор
+
+Проверка решения
+ID = 88565955'''
+
+
 OPERATIONS: dict = {
     '+': lambda a, b: a + b,
     '-': lambda a, b: a - b,

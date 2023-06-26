@@ -1,3 +1,9 @@
+'''Дек
+
+Проверка решения
+ID = 88568405'''
+
+
 COMMANDS: set = (
     'push_back',
     'push_front',
